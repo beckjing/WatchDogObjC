@@ -1,9 +1,9 @@
 //
-//  TraceLogger.h
-//  WatchDogObjCDemo
+//  BSBacktraceLogger.h
+//  BSBacktraceLogger
 //
-//  Created by 景悦诚 on 2018/5/27.
-//  Copyright © 2018 NanoSparrow. All rights reserved.
+//  Created by 张星宇 on 16/8/27.
+//  Copyright © 2016年 bestswifter. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -12,7 +12,7 @@
 #define BSLOG_MAIN NSLog(@"%@",[BSBacktraceLogger bs_backtraceOfMainThread]);
 #define BSLOG_ALL NSLog(@"%@",[BSBacktraceLogger bs_backtraceOfAllThread]);
 
-@interface TraceLogger : NSObject
+@interface BSBacktraceLogger : NSObject
 
 + (NSString *)bs_backtraceOfAllThread;
 + (NSString *)bs_backtraceOfCurrentThread;

@@ -8,7 +8,7 @@
 
 #import "WatchDog.h"
 #import "PingThread.h"
-#import "TraceLogger.h"
+#import "BSBacktraceLogger.h"
 
 @interface WatchDog()
 
@@ -27,14 +27,13 @@
     NSString *message = [NSString stringWithFormat:@"👮 Main thread was blocked for %.2fs 👮", threshold];
     if (strictMode) {
         return [self initWithThreshold:threshold watchdogFiredCallback:^{
-            NSLog(@"%@", [TraceLogger bs_backtraceOfMainThread]);
-            NSAssert(false, message);
+            NSAssert(false, @"%@\n%@", message, [BSBacktraceLogger bs_backtraceOfMainThread]);
         }];
     }
     else {
         return [self initWithThreshold:threshold watchdogFiredCallback:^{
             NSLog(@"%@", message);
-            NSLog(@"%@", [TraceLogger bs_backtraceOfMainThread]);
+            NSLog(@"%@", [BSBacktraceLogger bs_backtraceOfMainThread]);
         }];
     }
 }

@@ -1,12 +1,12 @@
 //
-//  TraceLogger.m
-//  WatchDogObjCDemo
+//  BSBacktraceLogger.m
+//  BSBacktraceLogger
 //
-//  Created by 景悦诚 on 2018/5/27.
-//  Copyright © 2018 NanoSparrow. All rights reserved.
+//  Created by 张星宇 on 16/8/27.
+//  Copyright © 2016年 bestswifter. All rights reserved.
 //
 
-#import "TraceLogger.h"
+#import "BSBacktraceLogger.h"
 #import <mach/mach.h>
 #include <dlfcn.h>
 #include <pthread.h>
@@ -72,7 +72,7 @@ typedef struct BSStackFrameEntry{
 
 static mach_port_t main_thread_id;
 
-@implementation TraceLogger
+@implementation BSBacktraceLogger
 
 + (void)load {
     main_thread_id = mach_thread_self();

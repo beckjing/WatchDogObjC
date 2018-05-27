@@ -15,7 +15,7 @@
 		377D8A6E20BA8A6E00FE6472 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 377D8A6D20BA8A6E00FE6472 /* main.m */; };
 		37C1526820BA9F78008C017F /* WatchDog.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C1526720BA9F78008C017F /* WatchDog.m */; };
 		37C1526B20BAA091008C017F /* PingThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C1526A20BAA091008C017F /* PingThread.m */; };
-		37C1526E20BACCC2008C017F /* TraceLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C1526D20BACCC2008C017F /* TraceLogger.m */; };
+		37C1527120BB00B7008C017F /* BSBacktraceLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C1527020BB00B7008C017F /* BSBacktraceLogger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,8 +33,8 @@
 		37C1526720BA9F78008C017F /* WatchDog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WatchDog.m; sourceTree = "<group>"; };
 		37C1526920BAA091008C017F /* PingThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PingThread.h; sourceTree = "<group>"; };
 		37C1526A20BAA091008C017F /* PingThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PingThread.m; sourceTree = "<group>"; };
-		37C1526C20BACCC2008C017F /* TraceLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TraceLogger.h; sourceTree = "<group>"; };
-		37C1526D20BACCC2008C017F /* TraceLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TraceLogger.m; sourceTree = "<group>"; };
+		37C1526F20BB00B7008C017F /* BSBacktraceLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSBacktraceLogger.h; sourceTree = "<group>"; };
+		37C1527020BB00B7008C017F /* BSBacktraceLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSBacktraceLogger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +88,8 @@
 				37C1526720BA9F78008C017F /* WatchDog.m */,
 				37C1526920BAA091008C017F /* PingThread.h */,
 				37C1526A20BAA091008C017F /* PingThread.m */,
-				37C1526C20BACCC2008C017F /* TraceLogger.h */,
-				37C1526D20BACCC2008C017F /* TraceLogger.m */,
+				37C1526F20BB00B7008C017F /* BSBacktraceLogger.h */,
+				37C1527020BB00B7008C017F /* BSBacktraceLogger.m */,
 			);
 			name = Classes;
 			path = ../../Classes;
@@ -168,7 +168,7 @@
 				37C1526B20BAA091008C017F /* PingThread.m in Sources */,
 				377D8A6320BA8A6C00FE6472 /* ViewController.m in Sources */,
 				377D8A6E20BA8A6E00FE6472 /* main.m in Sources */,
-				37C1526E20BACCC2008C017F /* TraceLogger.m in Sources */,
+				37C1527120BB00B7008C017F /* BSBacktraceLogger.m in Sources */,
 				37C1526820BA9F78008C017F /* WatchDog.m in Sources */,
 				377D8A6020BA8A6B00FE6472 /* AppDelegate.m in Sources */,
 			);
