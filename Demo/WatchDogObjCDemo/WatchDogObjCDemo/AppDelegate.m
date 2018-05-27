@@ -7,8 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "WatchDog.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) WatchDog *watchDog;
 
 @end
 
@@ -17,6 +20,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.watchDog = [[WatchDog alloc] initWithThreshold:0.00004 strictMode:NO];
     return YES;
 }
 
