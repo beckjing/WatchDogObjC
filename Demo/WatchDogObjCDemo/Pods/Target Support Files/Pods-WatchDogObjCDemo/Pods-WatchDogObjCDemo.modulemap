@@ -1,0 +1,6 @@
+framework module Pods_WatchDogObjCDemo {
+  umbrella header "Pods-WatchDogObjCDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - WatchdogObjC (0.0.2)
+
+DEPENDENCIES:
+  - WatchdogObjC
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - WatchdogObjC
+
+SPEC CHECKSUMS:
+  WatchdogObjC: c419e5aa0ca14f125f9f1a3709051bd47dc3e0bf
+
+PODFILE CHECKSUM: 38df745ddba6c18ac5f5c039c9e2fbeb21818dc6
+
+COCOAPODS: 1.5.0

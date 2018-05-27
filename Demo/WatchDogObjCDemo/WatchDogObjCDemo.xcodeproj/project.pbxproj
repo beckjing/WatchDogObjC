@@ -13,9 +13,7 @@
 		377D8A6820BA8A6E00FE6472 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 377D8A6720BA8A6E00FE6472 /* Assets.xcassets */; };
 		377D8A6B20BA8A6E00FE6472 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 377D8A6920BA8A6E00FE6472 /* LaunchScreen.storyboard */; };
 		377D8A6E20BA8A6E00FE6472 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 377D8A6D20BA8A6E00FE6472 /* main.m */; };
-		37C1526820BA9F78008C017F /* WatchDog.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C1526720BA9F78008C017F /* WatchDog.m */; };
-		37C1526B20BAA091008C017F /* PingThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C1526A20BAA091008C017F /* PingThread.m */; };
-		37C1527120BB00B7008C017F /* BSBacktraceLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C1527020BB00B7008C017F /* BSBacktraceLogger.m */; };
+		DE744E8C27BF8F2DE8471747 /* Pods_WatchDogObjCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C289DE42D2B67A4F607C1D89 /* Pods_WatchDogObjCDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,12 +27,9 @@
 		377D8A6A20BA8A6E00FE6472 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		377D8A6C20BA8A6E00FE6472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		377D8A6D20BA8A6E00FE6472 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		37C1526620BA9F78008C017F /* WatchDog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WatchDog.h; sourceTree = "<group>"; };
-		37C1526720BA9F78008C017F /* WatchDog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WatchDog.m; sourceTree = "<group>"; };
-		37C1526920BAA091008C017F /* PingThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PingThread.h; sourceTree = "<group>"; };
-		37C1526A20BAA091008C017F /* PingThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PingThread.m; sourceTree = "<group>"; };
-		37C1526F20BB00B7008C017F /* BSBacktraceLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSBacktraceLogger.h; sourceTree = "<group>"; };
-		37C1527020BB00B7008C017F /* BSBacktraceLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSBacktraceLogger.m; sourceTree = "<group>"; };
+		C289DE42D2B67A4F607C1D89 /* Pods_WatchDogObjCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchDogObjCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D130D00DD4789C5E38F11855 /* Pods-WatchDogObjCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchDogObjCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchDogObjCDemo/Pods-WatchDogObjCDemo.release.xcconfig"; sourceTree = "<group>"; };
+		FF8C5229131840BDD948A59F /* Pods-WatchDogObjCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchDogObjCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchDogObjCDemo/Pods-WatchDogObjCDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,18 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE744E8C27BF8F2DE8471747 /* Pods_WatchDogObjCDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07BA8B2B236EF48A8969021E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF8C5229131840BDD948A59F /* Pods-WatchDogObjCDemo.debug.xcconfig */,
+				D130D00DD4789C5E38F11855 /* Pods-WatchDogObjCDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		280A98032D3DED12203CB109 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C289DE42D2B67A4F607C1D89 /* Pods_WatchDogObjCDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		377D8A5220BA8A6B00FE6472 = {
 			isa = PBXGroup;
 			children = (
-				37C1526520BA9F66008C017F /* Classes */,
 				377D8A5D20BA8A6B00FE6472 /* WatchDogObjCDemo */,
 				377D8A5C20BA8A6B00FE6472 /* Products */,
+				07BA8B2B236EF48A8969021E /* Pods */,
+				280A98032D3DED12203CB109 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,20 +95,6 @@
 			path = WatchDogObjCDemo;
 			sourceTree = "<group>";
 		};
-		37C1526520BA9F66008C017F /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				37C1526620BA9F78008C017F /* WatchDog.h */,
-				37C1526720BA9F78008C017F /* WatchDog.m */,
-				37C1526920BAA091008C017F /* PingThread.h */,
-				37C1526A20BAA091008C017F /* PingThread.m */,
-				37C1526F20BB00B7008C017F /* BSBacktraceLogger.h */,
-				37C1527020BB00B7008C017F /* BSBacktraceLogger.m */,
-			);
-			name = Classes;
-			path = ../../Classes;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 377D8A7120BA8A6E00FE6472 /* Build configuration list for PBXNativeTarget "WatchDogObjCDemo" */;
 			buildPhases = (
+				9E15AB47FC3670A26E9F63D4 /* [CP] Check Pods Manifest.lock */,
 				377D8A5720BA8A6B00FE6472 /* Sources */,
 				377D8A5820BA8A6B00FE6472 /* Frameworks */,
 				377D8A5920BA8A6B00FE6472 /* Resources */,
+				E9284FC729C00EAC34097CD9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,16 +162,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9E15AB47FC3670A26E9F63D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchDogObjCDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9284FC729C00EAC34097CD9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WatchDogObjCDemo/Pods-WatchDogObjCDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/WatchdogObjC/WatchdogObjC.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WatchdogObjC.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchDogObjCDemo/Pods-WatchDogObjCDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		377D8A5720BA8A6B00FE6472 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37C1526B20BAA091008C017F /* PingThread.m in Sources */,
 				377D8A6320BA8A6C00FE6472 /* ViewController.m in Sources */,
 				377D8A6E20BA8A6E00FE6472 /* main.m in Sources */,
-				37C1527120BB00B7008C017F /* BSBacktraceLogger.m in Sources */,
-				37C1526820BA9F78008C017F /* WatchDog.m in Sources */,
 				377D8A6020BA8A6B00FE6472 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,16 +346,14 @@
 		};
 		377D8A7220BA8A6E00FE6472 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF8C5229131840BDD948A59F /* Pods-WatchDogObjCDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z4QLTYGECA;
 				INFOPLIST_FILE = WatchDogObjCDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nanosparrow.WatchDogObjCDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -326,16 +362,14 @@
 		};
 		377D8A7320BA8A6E00FE6472 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D130D00DD4789C5E38F11855 /* Pods-WatchDogObjCDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z4QLTYGECA;
 				INFOPLIST_FILE = WatchDogObjCDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nanosparrow.WatchDogObjCDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
