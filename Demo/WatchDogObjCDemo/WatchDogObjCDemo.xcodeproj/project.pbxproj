@@ -13,6 +13,9 @@
 		377D8A6820BA8A6E00FE6472 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 377D8A6720BA8A6E00FE6472 /* Assets.xcassets */; };
 		377D8A6B20BA8A6E00FE6472 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 377D8A6920BA8A6E00FE6472 /* LaunchScreen.storyboard */; };
 		377D8A6E20BA8A6E00FE6472 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 377D8A6D20BA8A6E00FE6472 /* main.m */; };
+		37C1526820BA9F78008C017F /* WatchDog.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C1526720BA9F78008C017F /* WatchDog.m */; };
+		37C1526B20BAA091008C017F /* PingThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C1526A20BAA091008C017F /* PingThread.m */; };
+		37C1526E20BACCC2008C017F /* TraceLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C1526D20BACCC2008C017F /* TraceLogger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		377D8A6A20BA8A6E00FE6472 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		377D8A6C20BA8A6E00FE6472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		377D8A6D20BA8A6E00FE6472 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		37C1526620BA9F78008C017F /* WatchDog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WatchDog.h; sourceTree = "<group>"; };
+		37C1526720BA9F78008C017F /* WatchDog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WatchDog.m; sourceTree = "<group>"; };
+		37C1526920BAA091008C017F /* PingThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PingThread.h; sourceTree = "<group>"; };
+		37C1526A20BAA091008C017F /* PingThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PingThread.m; sourceTree = "<group>"; };
+		37C1526C20BACCC2008C017F /* TraceLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TraceLogger.h; sourceTree = "<group>"; };
+		37C1526D20BACCC2008C017F /* TraceLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TraceLogger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +51,7 @@
 		377D8A5220BA8A6B00FE6472 = {
 			isa = PBXGroup;
 			children = (
+				37C1526520BA9F66008C017F /* Classes */,
 				377D8A5D20BA8A6B00FE6472 /* WatchDogObjCDemo */,
 				377D8A5C20BA8A6B00FE6472 /* Products */,
 			);
@@ -69,6 +79,20 @@
 				377D8A6D20BA8A6E00FE6472 /* main.m */,
 			);
 			path = WatchDogObjCDemo;
+			sourceTree = "<group>";
+		};
+		37C1526520BA9F66008C017F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				37C1526620BA9F78008C017F /* WatchDog.h */,
+				37C1526720BA9F78008C017F /* WatchDog.m */,
+				37C1526920BAA091008C017F /* PingThread.h */,
+				37C1526A20BAA091008C017F /* PingThread.m */,
+				37C1526C20BACCC2008C017F /* TraceLogger.h */,
+				37C1526D20BACCC2008C017F /* TraceLogger.m */,
+			);
+			name = Classes;
+			path = ../../Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37C1526B20BAA091008C017F /* PingThread.m in Sources */,
 				377D8A6320BA8A6C00FE6472 /* ViewController.m in Sources */,
 				377D8A6E20BA8A6E00FE6472 /* main.m in Sources */,
+				37C1526E20BACCC2008C017F /* TraceLogger.m in Sources */,
+				37C1526820BA9F78008C017F /* WatchDog.m in Sources */,
 				377D8A6020BA8A6B00FE6472 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z4QLTYGECA;
 				INFOPLIST_FILE = WatchDogObjCDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +331,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z4QLTYGECA;
 				INFOPLIST_FILE = WatchDogObjCDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
