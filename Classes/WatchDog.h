@@ -11,6 +11,6 @@
 @interface WatchDog : NSObject
 
 - (instancetype)initWithThreshold:(double)threshold strictMode:(BOOL)strictMode;
-- (instancetype)initWithThreshold:(double)threshold watchdogFiredCallback:(void(^)(void))watchdogFiredCallback;
+- (instancetype)initWithThreshold:(double)threshold watchdogFiredCallback:(void(^)(NSString *backtrace))watchdogFiredCallback;
 
 @end
