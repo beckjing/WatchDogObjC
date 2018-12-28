@@ -1,17 +1,15 @@
 //
-//  PingThread.m
-//  WatchDogObjCDemo
+//  WDPingThread.m
+//  Pods
 //
-//  Created by 景悦诚 on 2018/5/27.
-//  Copyright © 2018 NanoSparrow. All rights reserved.
+//  Created by yuecheng on 2018/12/28.
 //
 
-#import "PingThread.h"
-#import <Foundation/Foundation.h>
+#import "WDPingThread.h"
 
-static double DefaultThreshold = 0.04;
+static double WDDefaultThreshold = 0.04;
 
-@interface PingThread()
+@interface WDPingThread ()
 
 @property (nonatomic, strong) NSObject *pingTaskIsRunngingLock;
 @property (nonatomic, strong) dispatch_semaphore_t semaphore;
@@ -20,9 +18,7 @@ static double DefaultThreshold = 0.04;
 
 @end
 
-
-
-@implementation PingThread
+@implementation WDPingThread
 
 @synthesize pingTaskIsRunning = _pingTaskIsRunning;
 
@@ -39,7 +35,7 @@ static double DefaultThreshold = 0.04;
 - (instancetype)init {
     self = [super init];
     if (self) {
-        _threshold = DefaultThreshold; //defaultValue
+        _threshold = WDDefaultThreshold; //defaultValue
         _pingTaskIsRunngingLock = [[NSObject alloc] init];
         _semaphore = dispatch_semaphore_create(0);
     }
@@ -49,7 +45,7 @@ static double DefaultThreshold = 0.04;
 
 - (BOOL)pingTaskIsRunning {
     @synchronized(self.pingTaskIsRunngingLock) {
-       return _pingTaskIsRunning;
+        return _pingTaskIsRunning;
     }
 }
 

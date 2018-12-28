@@ -1,17 +1,17 @@
 //
-//  PingThread.h
-//  WatchDogObjCDemo
+//  WDPingThread.h
+//  Pods
 //
-//  Created by 景悦诚 on 2018/5/27.
-//  Copyright © 2018 NanoSparrow. All rights reserved.
+//  Created by yuecheng on 2018/12/28.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface PingThread : NSThread
+@interface WDPingThread : NSThread
 
 @property (nonatomic, assign) BOOL pingTaskIsRunning;
 
 - (instancetype)initWithThreshold:(double)threshold handler:(void (^)(void))handler;
 
 @end
+

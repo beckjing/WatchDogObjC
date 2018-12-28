@@ -11,8 +11,8 @@
 #endif
 
 #import "BSBacktraceLogger.h"
-#import "PingThread.h"
 #import "WatchDog.h"
+#import "WDPingThread.h"
 
 FOUNDATION_EXPORT double WatchdogObjCVersionNumber;
 FOUNDATION_EXPORT const unsigned char WatchdogObjCVersionString[];

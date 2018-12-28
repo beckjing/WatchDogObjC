@@ -7,7 +7,7 @@
 //
 
 #import "WatchDog.h"
-#import "PingThread.h"
+#import "WDPingThread.h"
 #import "BSBacktraceLogger.h"
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
@@ -17,7 +17,7 @@
 UIAlertViewDelegate
 >
 
-@property (nonatomic, strong) PingThread *pingThread;
+@property (nonatomic, strong) WDPingThread *pingThread;
 
 @end
 
@@ -59,7 +59,7 @@ UIAlertViewDelegate
                 [alert show];
             });
         }
-        _pingThread = [[PingThread alloc] initWithThreshold:threshold handler:^{
+        _pingThread = [[WDPingThread alloc] initWithThreshold:threshold handler:^{
             if (watchdogFiredCallback) {
                 watchdogFiredCallback([BSBacktraceLogger bs_backtraceOfMainThread]);
             }
